@@ -1,0 +1,14 @@
+<div class='left'>
+  <div id="left-column" class="yen">
+    <article>
+      <header>
+        <h3>Japanese Yen</h3>
+      </header>
+      <div class="content">
+        <textarea [(ngModel)]="yenValue" OnlyNumber
+                  (keyup)="changeValuePrice($event.srcElement.value)"
+                  placeholder="Enter value in Yen"></textarea>
+      </div>
+    </article>
+  </div>
+</div>
